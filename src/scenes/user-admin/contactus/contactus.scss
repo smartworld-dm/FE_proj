@@ -1,0 +1,336 @@
+body{
+	font-family: 'lato';
+	color: #111;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.vertical-align{
+	position: relative;
+	top: 35%;
+	transform: translateY(-50%);
+}
+
+strong{
+	font-weight: 900;
+}
+
+p{
+	line-height: 24px;
+	font-weight: 300px;
+
+
+}
+
+a,a:focus{
+   color: #873fb5
+}
+
+a:hover{
+	color: #41135f;
+	text-decoration: none;
+}
+
+section{
+	padding: 50px 0;
+}
+ hr{
+ 	width: 130px;
+ 	
+
+
+ }
+
+ hr.icon:after{
+  content: "\f123";
+  color:#873fb5;
+  font-family: 'FontAwesome';
+  font-size: 1.5em;
+  background-color: white;
+  top: -0.7em;
+  position:relative;
+  padding: .50em;
+ }
+
+ .section-heading{
+ 	color:#873fb5;
+ }
+
+ .section-heading h3{
+ 	font-weight: 300;
+ 	Letter-spacing: 3px;
+ }
+
+ .section-heading hr{
+ 	border-color: #873fb5;
+ 	margin-top: 30px;
+ 	margin-bottom: 40px;
+ }
+
+
+
+#about{
+background: url("http://www.goodwp.com/images/201103/goodwp.com_16835.jpg")fixed;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+color: white;
+height: 500px;
+text-align: center;
+}
+
+#about h2{
+	padding-top: 10% !important;
+}
+
+#about h3{
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+
+#about h4{
+	margin: 20px;
+	font-weight: 300;
+	padding: 0 20%;	
+}
+
+#footer .footer-menu ul li a {
+    color: #cdd6d6;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+
+#footer .footer-menu ul li {
+     list-style-type: none; 
+     margin: 0; 
+     padding: 0; 
+     display: inline;
+}
+
+
+#footer .footer-menu ul {
+    list-style-type: none;
+    margin: 0 15px 0 0;
+    padding: 0;
+    /*width: 140px;*/
+    float: left;
+    text-align: left;
+
+    /*vertical-align: top;*/
+}
+
+
+@media screen and (max-width: 767px){
+#footer .footer-menu ul {
+    display: inline-block;
+    float: none;
+    width: 47%;
+    margin-bottom: 25px;
+    margin-right: 0;
+}
+
+
+.footer-subscribe {
+	float:right;
+	width:33%;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.footer-menu {
+	float:left;
+
+	width:67%;
+	text-align: center;
+	padding-left:40%;
+	margin-top:40px;
+}
+}
+
+@media screen and (max-width: 768px){
+	#footer .footer-menu {
+	    width: 100%;
+	    text-align: center;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#footer .subscribe-wrapper .subscribe-form button[type=button] {
+	    font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#footer .footer-subscribe {
+	    width: 100%;
+	    text-align: center;
+	    border-top: 1px solid rgba(255,255,255,.08);
+	    margin-top: 30px;
+	    padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#footer .subscribe-wrapper .subscribe-form button[type=button] {
+	    font-size: 14px;
+	}
+}
+
+#footer .subscribe-wrapper .subscribe-form input[type=email] {
+    width: 100%;
+    padding: 20px 90px 20px 10px;
+    height: 53px;
+    font-size: 16px;
+    font-weight: 600;
+    outline: 0;
+    font-family: proxima-nova,sans-serif;
+    color: #cdd6d6;
+    background: 0 0;
+    border: 1px solid #fff;
+}
+
+
+
+#footer .subscribe-wrapper .subscribe-form button[type=button] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 18px 15px;
+
+}
+
+.button {
+    padding: 18px 35px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+    color: #000 !important;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    height:52px;
+    transition: background .25s ease-in-out;
+}
+
+#footer .subscribe-wrapper .subscribe-form {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+
+
+#footer ul a{
+	font-size: 30px;
+	color: white;
+	padding: 0 10px;
+
+}
+/*
+.copyrights{
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	padding: 5px 0;
+
+}*/
+
+
+#footer .logo{
+
+font-size: 47px;
+padding: 0 20px 10px 20px;
+
+}
+
+#footer ul{
+
+padding-left: 0;
+margin-top: 10px ;
+display: block;
+}
+
+#footer #social-media-footer li{
+
+display: inline-block;
+
+}
+
+
+#footer{
+	background: url("http://images.utrechtart.com/products/optionLarge/Canford/canford-card-royal-purple-40733.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: white;
+	padding: 50px 0;
+}
+
+
+
+.form-control{
+
+height: 45px;
+padding: 15px;
+font-size: 16px;
+color: #8c8c8c; 
+background-color: #f5f5f5;
+border: 1px solid #d1d1d1;
+box-shadow: none;
+font-weight: 300;
+}
+
+.form-control:focus{
+	box-shadow: none;
+	color: #793a93;
+	border-color:  #793a93;
+}
+
+.form-control::-moz-placeholder{
+	color: #8c8c8c;
+}
+
+.form-control::-ms-input-placeholder{
+	color: #8c8c8c;
+}
+
+.form-control::-webkit-input-placeholder{
+	color: #8c8c8c;
+}
+
+
+.form-control:focus::-moz-placeholder{
+	color: #793a93;
+}
+
+.form-control:focus::-ms-input-placeholder{
+	color: #793a93;
+}
+
+.form-control:focus::-webkit-input-placeholder{
+	color: #793a93;
+}
+
+.logo {
+	clear: both;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.get-started-tab{
+	padding: 20px;
+}

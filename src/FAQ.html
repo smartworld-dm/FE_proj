@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flick&Earn FAQ</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/icons.css">
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js" integrity="sha256-meF2HJJ2Tcruwz3z4XcxYDRMxKprjdruBHc3InmixCQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js" integrity="sha256-+JMHsXRyeTsws/tzbIh5YHQxRdKCuNjmvNcTFtY6DLc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js" integrity="sha256-dwhppIrxD8qC6lNulndZgtIm4XBU9zoMd9OUoXzIDAE=" crossorigin="anonymous"></script>
+    <style type="text/css">
+      nav {font-size: 1.4vh;} /* Allows scroll on nav */
+      #nav {padding: 0; max-height: 100vh; overflow-y: scroll;}
+      #nav::-webkit-scrollbar {width: 0px;} /* Hides nav scroll */
+      #tocTitle {margin: 0; background-color: white; padding-top: 8px; padding-bottom: 8px;}
+      #search-row {padding-top: 20px; margin-bottom: 1vh; background-color: white;}
+      #spacer {height: 25vh;}
+      #header {font-size: 1.4vh;}
+      a.nav-link {color: black; width: 100%; font-weight: 450;}
+      a.nav-link:hover {background-color: #ace;}
+      .bg-black {background-color: #0d0d0d;}
+      .text-black {color: black;}
+      .text-black:hover {color: white;}
+    </style>
+
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"  href="index.css">
+    <link href="bootstrap/css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+      <section id="about">
+        <div class="container text-center vertical-align">
+                    <h2>More than just a website</h2>
+                    <h4>Build Your Brand Get New Business  Manage Clients  Do It Yourself.</h4>
+                    <button class="button btn btn-success v-pixpa-blue get-started"  onclick="ga('send', 'event', 'Above the fold CTA', 'Get Started', '/');">Get Started</button>
+                    <div class="get-started-tab">
+                    <p> 15 days free trial. No Credit Card required. </p>
+                    </div>
+          </div>
+          </div>
+
+
+      </div>
+        </div>
+      </section>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2  sticky-top" id="nav">
+          
+          <nav class="nav flex-column nav-pills" id="table-of-contents">
+            <script type="text/x-handlebars" id="navTemplate">
+              
+              
+            </script>
+
+          </nav>
+
+
+          </div>
+          <div class="col-8 pr-3" id="content">
+         
+            <div class="row text-center" id="title">
+              <div class="col">
+                <h1>Flick&Earn FAQ</h1>
+                <button class="btn mr-3 float-right" id="mode"><span class="icon-lightbulb-dark"></span></button>
+              </div>
+            </div>
+          
+            <div class="row sticky-top" id="search-row">
+              <div class="col">
+                <form class="mb-0">
+                  <div class="form-group m-0">
+                    <input class="search-query form-control" type="text" placeholder="Search" id="search">
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="row" id="questions">
+
+            <div class="col">
+              <div class="accordion" id="questionTemplate-container">
+              <script type="text/x-handlebars" id="questionTemplate">
+                {{#each questions}}
+                <div class="card my-1" id="Q{{ id }}">
+
+                  <div class="card-header">
+                    <span class="icon-angle-right"></span> <h5 class="d-inline">{{ question }}</h5>
+                    <div class="float-right">
+                      <button class="btn btn-sm d-inline m-0" title="Copy direct link" data-clipboard-text="https://idlechampionsfaq.netlify.com/#Q{{ id }}"><span class="icon-link"></i></button>
+                    </div>
+                  </div>
+
+                  <div class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+                      <div class="row">
+                        <div class="col">
+                          {{{ answer }}}
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                {{/each}}
+              </script>
+              </div>
+
+            </div>
+          </div>
+
+
+         
+          <div id="spacer"></div>
+        </div>
+      </div>
+
+    </div>
+
+
+  <footer id="footer">
+       <div>
+        <div class="container  text-center footer-menu">
+              
+              <ul>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="TermsOfUse.html">Terms of Use</a></li>
+              </ul>
+          </div>
+
+           <div class="subscribe-wrapper footer-subscribe">
+              <h3>Subscribe</h3>
+              <p>Subscribe to get inspiration and tips to grow your creative business.</p>
+              <div class="subscribe-form">
+                  <input type="hidden" id="csrf_token" name="_token" value="JoVlecY7VTwLAf10yg31fMmyQnNygXcs8WX9mDc7">
+                  <input type="email" required placeholder="Enter Email to Subscribe" name="email" class="email">
+                            <button type="button" value="send" class="button btn btn-success submit-subscription">Submit</button>
+                <span class="form-sucess"></span>
+              </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+         
+
+         <h1 class="logo"><strong>Flick&Earn</strong></h1>
+         <ul id="social-media-footer">
+           <li><a href=""><i class="fa fa-facebook-official"></i></a></li>
+           <li><a href=""><i class="fa fa-github"></i></a></li>
+           <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+       </div>
+
+       <div class="copyrights text-center">
+         &copy; Copyright 2018
+       </div>
+
+      </footer>
+
+
+
+  <script src="faq/questions.js"></script>
+  <script src="faq/script.js"></script>
+  </body>
+</html>
